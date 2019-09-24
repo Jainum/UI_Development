@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--External CSS for this website-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="bootstrap.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="bootstrap-theme.css">
+
+  <title>Document</title>
+  
+</head>
+
+<body>
+  <span id="timestamp">Time Stamp</span>
+  <div class="container-fluid">
+    <!-- Control the column width, and how they should appear on different devices -->
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Personal Copy</h2>
+        <form class="form-block personal" name="myform" onsubmit="return ValidateUserInput()">
+          
+          <label for="pname" class="form-group">Name*:</label><br />
+          <input type="text" class="form-control" id="pname">
+          <span id="nametext"></span>
+          <br />
+          
+          <label for="paddress" class="form-group">Address:</label><br />
+          <input type="text" class="form-control" id="paddress">
+          <br />
+
+          <label for="pzipcode" class="form-group">Zipcode*:</label><br />
+          <input type="text" class="form-control" id="pzipcode">
+          <span id="zipcodetext"></span>
+          <br />
+
+          <label for="pcountry" class="form-group">Country*:</label><br />
+          <select name="pcountry">
+            <option value="default">Please Select Your Country</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="france">France</option>
+          </select>
+          <span id="countrytext"></span>
+          <br />
+
+          <label for="pgender" class="form-group">Gender*:</label>
+          <input type="radio" name="pgender" value="male"> Male
+          <input type="radio" name="pgender" value="female"> Female
+          <span id="gendertext"></span>          
+          <br />
+
+          <label for="ppreferences" class="form-group">Preferences*:</label>          
+          <input type="checkbox" name="ppreferences" value="Red">Red
+          <input type="checkbox" name="ppreferences" value="Green">Green
+          <input type="checkbox" name="ppreferences" value="Blue">Blue
+          <span id="preferencestext"></span>          
+          <br />
+
+          <label for="pphone" class="form-group">Phone*:</label><br />
+          <input type="text" class="form-control" name="pphone">
+          <span id="phonetext"></span>
+          <br />
+
+          <label for="pemail" class="form-group">Email*:</label><br />
+          <input type="email" class="form-control" name="pemail">
+          <span id="emailtext"></span>
+          <br />
+
+          <label for="ppassword" class="form-group">Password(6-8 Characters)*:</label><br />
+          <input type="password" class="form-control" name="ppassword">
+          <span id="pwdtext"></span>
+          <br />
+
+          <label for="pverifypassword" class="form-group">Verify Password*:</label><br />
+          <input type="password" class="form-control" name="pverifypassword">
+          <span id="conpwdtext"></span>
+          <br />
+
+          <input type="submit" name="send" value="Send" class="form-group">
+          <input type="button" name="clear" value="Clear" class="form-group">  
+        </form>
+      </div>
+
+      <div class="col-sm-6">
+        <h2>Office Copy</h2>
+        <form class="form-block official">
+          
+          <label for="oname" class="form-group">Name:</label><br />
+          <input type="text" class="form-control" name="oname" readonly>
+          
+          <label for="oaddress" class="form-group">Address:</label><br />
+          <input type="text" class="form-control" name="oaddress" readonly>          
+
+          <label for="ozipcode" class="form-group">Zipcode:</label><br />
+          <input type="text" class="form-control" name="ozipcode" readonly>
+
+          <label for="ocountry" class="form-group">Country:</label><br />
+          <select name="ocountry">
+            <option value="default">Please Select Your Country</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="france">France</option>
+          </select>
+          <br />
+          
+          <label for="ogender" class="form-group">Gender:</label>
+          <input type="radio" name="ogender" value="male"> Male
+          <input type="radio" name="ogender" value="female"> Female
+          <br />
+
+          <label for="opreferences" class="form-group">Preferences:</label>
+          <input type="checkbox" name="opreferences" value="Red">Red
+          <input type="checkbox" name="opreferences" value="Green">Green
+          <input type="checkbox" name="opreferences" value="Blue">Blue
+          <br />
+
+          <label for="ophone" class="form-group">Phone:</label><br />
+          <input type="text" class="form-control" name="ophone" readonly>
+          
+          <label for="oemail" class="form-group">Email:</label><br />
+          <input type="email" class="form-control" name="oemail" readonly>
+          
+          <label for="opassword" class="form-group">Password(6-8 Characters):</label><br />
+          <input type="password" class="form-control" name="opassword" readonly>
+          
+          <label for="overifypassword" class="form-group">Verify Password:</label><br />
+          <input type="password" class="form-control" name="overifypassword" readonly>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

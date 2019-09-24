@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <title>View Companies</title>
+    <style>
+        h1 {
+          color: green;
+          text-align: center;
+        }
+      </style>
+  </head>
+
+  <body>
+    <h1><b>Client Data</b></h1>
+    <span id="result" style="text-align: center"></span>
+    <span id="result2" style="text-align: center"></span>
+
+    <script>
+
+      if (typeof(Storage) !== "undefined") {  
+        document.getElementById("result").innerHTML = localStorage.getItem("companyname");
+        document.getElementById("result2").innerHTML = localStorage.getItem("companyemail");
+      } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+      } 
+
+    </script>
+      
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <title>Add Company</title>
+    <style>
+      h1 {
+        color: blue;
+        text-align: center;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <h1><b>New Client Form</b></h1>
+    <div id="result"></div>
+    <div id="result2"></div>
+    <form style="text-align:center"  onsubmit="test(this)" action="E:/Assignment/View_Companies.html">
+      Company Name:
+      <br>
+      <input type="text" id="cn" name="companyname">
+      <br>
+      Company Email:
+      <br>
+      <input type="email" id="ce" name="companyemail">
+      <br><br>
+      <input type="submit" value="Add Company">
+    </form> 
+  
+    <script>
+
+      function test(e){
+        if (typeof(Storage) !== "undefined") {
+          localStorage.companyname=e.companyname.value;
+          localStorage.companyemail=e.companyemail.value;
+      }
+
+    </script>
+  </body>
+</html>

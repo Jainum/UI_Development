@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row2 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.row3 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.row4 {
+    background-color: rgb(165, 159, 159);
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<div class="clearfix">
+  <div style="background-color:#bbb">
+    <h2>Horizontal Responsive Form</h2>
+  </div>
+    <div>
+      <div class="row1">
+        <form>
+            NAME:<br />
+            <input type="text"> 
+        </form>
+      </div>
+      <div class="row1">
+        <form>
+          COMPANY:<br />
+            <input type="text"> 
+        </form>
+      </div> 
+    </div>
+    <div>
+      <div class="row2">
+        <form>
+          PHONE NUMBER:<br />
+            <input type="text"> 
+        </form>
+      </div>
+      <div class="row2">
+        <form>
+          EMAIL:<br />
+            <input type="email"> 
+        </form>
+      </div>
+      <div class="row2">
+        <form>
+          AVAILABILITY:<br />
+            <input type="text"> 
+        </form>
+      </div>   
+    </div>
+    <div class="row3">
+
+    </div>
+    <div class="row4">
+
+    </div>
+</div>
+
+</body>
+</html>

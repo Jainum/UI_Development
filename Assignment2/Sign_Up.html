@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <title>Sign Up</title>
+    <style>
+      h1, h2 {
+        text-align: center;
+      }
+      div {
+        border: 1px solid black;
+        padding: 10px;
+        width: 500px;
+        height: 900px;
+        text-align: justify;
+        background-color: rgb(67, 73, 73);
+      }
+      span {
+        text-align: left;
+        font-size: 20px
+      }
+      div {
+        width:"50%";
+        margin:auto;
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      
+    <h1>Sign Up</h1>
+    
+    <form>
+      <img src="one.jpg" alt="One" width="20px" height="20px"/>
+      <span>Your Basic Info:</span>
+      <br /><br />
+      Name:
+      <br />
+      <input type="text" name="name" style="background-color: rgb(175, 177, 172)">
+      <br />
+      Email:
+      <br />
+      <input type="email" name="email" style="background-color: rgb(175, 177, 172)">
+      <br />
+      Password:
+      <br />
+      <input type="password" name="password" style="background-color: rgb(175, 177, 172)">
+      <br />
+      Age:
+      <br />
+      <input type="radio" name="Under13" value="Under13" checked> Under13<br />
+      <input type="radio" name="13orolder" value="13orolder">13orolder
+      <br /><br /><br />
+      
+      <img src="two.jpg" alt="Two" width="20px" height="20px" />
+      <span>Your Profile:</span>
+      <br /><br />
+      Biography:
+      <br />
+      <textarea name="message" rows="10" cols="30" style="background-color: rgb(175, 177, 172)">
+      </textarea>        
+      <br /><br /><br />
+      Jobrole:
+      <br />
+      <select name="Jobrole" style="background-color: grey">
+        <option value="Front-End Developer" selected>Front-End Developer</option>
+        <option value="Back-End Developer">Back-End Developer</option>
+        <option value="Android Developer">Android Developer</option>
+        <option value="Financial Analyst">Financial Analyst</option>
+        <option value="Business Analyst">Business Analyst</option>
+      </select>
+      <br /><br />
+      Interests:
+      <br />
+      <input type="checkbox" name="interest" value="Development"> Development<br />
+      <input type="checkbox" name="interest" value="Design"> Design<br />
+      <input type="checkbox" name="interest" value="Business"> Business<br />
+      <br /><br />
+      <input type="button" value="Sign Up" style="background-color:green; width: 500px; height:50px">
+    </form> 
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+h1 {
+  background-color: rgb(102, 51, 153);
+  font-size: 40px;
+  text-align: center;
+  align-self: auto;
+  height: 60px;
+  width: 700px;
+}
+
+h2 {
+  background-color: rgb(204, 106, 138);
+  font-size: 20px;
+  text-align: center;
+  align-self: auto;
+  height: 30px;
+}
+
+button {
+  text-align: center;
+  align-self: center;
+  font-family: cursive;
+  margin: auto;
+  display: block;
+}
+
+div {
+  background: black;
+  color: red;
+  width: 400px;
+  margin: 50px;
+  padding: 30px;
+  border: 10px solid #FA5858;
+}
+
+div.mod {
+  background: brown;
+  color: slateblue;
+  width: 600px;
+  margin: 20px;
+  padding: 10px;
+  border: 30px solid #FA5858;
+}
+
+.myclass {
+  color: #FA5858;
+}
+
+.highlight {
+  background: #CEF6F5;
+}
+

@@ -1,0 +1,24 @@
+h1 {
+  color: rebeccapurple;
+  font-size: 40px;
+  text-align: center;
+  align-self: auto;
+}
+
+button {
+  text-align: center;
+  align-self: center;
+  font-family: cursive;
+  margin: auto;
+  display: block;
+}
+
+p {
+  background: black;
+  color: red;
+  }
+p.dbl {
+  background: yellow;
+  color: black;
+}
+
